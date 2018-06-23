@@ -1,5 +1,5 @@
-body {
-  height: 2000px; }
+* {
+  box-sizing: border-box; }
 
 header .bg-light {
   background-color: #fff !important; }
@@ -23,11 +23,71 @@ header .navbar-nav {
     margin: 0 26px; }
 
 header #header-picture {
-  background-image: linear-gradient(180deg, #fff 50%, transparent 50%), linear-gradient(180deg, #fff 50%, transparent 50%), linear-gradient(45deg, #fff 50%, transparent 50%), linear-gradient(-45deg, #fff 50%, transparent 50%);
-  background-position: top left, top left, bottom left, bottom left;
-  background-size: 18px 18px;
-  background-repeat: repeat-x;
-  height: 500px;
-  background-color: green; }
-  header #header-picture img {
-    height: 100%; }
+  background-image: url(../img/header-background.jpg);
+  background-position: center left;
+  background-size: cover;
+  height: 700px;
+  width: 100%; }
+  header #header-picture .saw-tooth-bottom {
+    position: relative;
+    bottom: -98%;
+    background-color: transparent;
+    background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(-45deg, white 50%, transparent 50%);
+    background-position: top left, top left, bottom left, bottom left;
+    background-size: 24px 24px;
+    background-repeat: repeat-x;
+    height: 40px;
+    width: 100%; }
+
+#news h2 {
+  padding-top: 150px;
+  font-family: 'Parisienne', cursive;
+  font-size: 3.5em; }
+  #news h2 p {
+    font-family: sans-serif;
+    font-size: 0.55em;
+    font-weight: 700; }
+  #news h2 .flag {
+    width: 120px;
+    height: 6px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 0 auto; }
+    #news h2 .flag .color {
+      height: 100%;
+      width: 33%;
+      float: left; }
+    #news h2 .flag .green {
+      background-color: green; }
+    #news h2 .flag .white {
+      background-color: white; }
+
+#news .news-list {
+  width: 80%;
+  margin: 0 auto; }
+  #news .news-list .carousel-inner .news-picture-wrapper {
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 0.7vw;
+    width: 80%; }
+    #news .news-list .carousel-inner .news-picture-wrapper img {
+      height: 100%;
+      width: 100%; }
+  #news .news-list .carousel-inner p {
+    font-size: 19px; }
+  #news .news-list .carousel-indicators {
+    position: relative; }
+  #news .news-list .list-number {
+    position: static;
+    text-indent: 0px;
+    text-align: center;
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #CFCFCF;
+    color: white;
+    font-size: 9px;
+    margin: 10px 15px; }
+  #news .news-list .active {
+    background-color: #fff; }
