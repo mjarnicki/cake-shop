@@ -2,6 +2,59 @@
     box-sizing: border-box;
 }
 
+.saw-tooth-bottom {
+    position: relative;
+    bottom: -98%;
+    background-color: transparent;
+    background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(-45deg, white 50%, transparent 50%);
+    background-position: top left, top left;
+    background-size: 24px 24px;
+    background-repeat: repeat-x;
+    height: 24px;
+    width: 100%;
+}
+
+.saw-tooth-top {
+    position: relative;
+    top: -3%;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(225deg, #fff 50%, transparent 50%);
+    background-position: bottom left, bottom left;
+    background-size: 24px 24px;
+    background-repeat: repeat-x;
+    height: 24px;
+    width: 100%;
+}
+
+h2 {
+    padding-top: 150px;
+    font-family: 'Parisienne', cursive;
+    font-size: 3.5em; //        font-weight: 600;
+    p {
+        font-family: sans-serif;
+        font-size: 0.55em;
+        font-weight: 700;
+    }
+    .flag {
+        width: 120px;
+        height: 6px;
+        background-color: red;
+        border: 1px solid black;
+        margin: 0 auto;
+        .color {
+            height: 100%;
+            width: 33%;
+            float: left;
+        }
+        .green {
+            background-color: green;
+        }
+        .white {
+            background-color: white;
+        }
+    }
+}
+
 header {
     .bg-light {
         background-color: #fff!important;
@@ -35,54 +88,16 @@ header {
         background-size: cover;
         height: 700px;
         width: 100%;
-        .saw-tooth-bottom {
-            position: relative;
-            bottom: -98%;
-            background-color: transparent;
-            background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(-45deg, white 50%, transparent 50%);
-            background-position: top left, top left, bottom left, bottom left;
-            background-size: 24px 24px;
-            background-repeat: repeat-x;
-            height: 40px;
-            width: 100%;
-        }
+
     }
 }
 
 #news {
-    h2 {
-        padding-top: 150px;
-        font-family: 'Parisienne', cursive;
-        font-size: 3.5em; //        font-weight: 600;
-        p {
-            font-family: sans-serif;
-            font-size: 0.55em;
-            font-weight: 700;
-        }
-        .flag {
-            width: 120px;
-            height: 6px;
-            background-color: red;
-            border: 1px solid black;
-            margin: 0 auto;
-            .color {
-                height: 100%;
-                width: 33%;
-                float: left;
-            }
-            .green {
-                background-color: green;
-            }
-            .white {
-                background-color: white;
-            }
-        }
-    }
     .news-list {
         width: 80%;
         margin: 0 auto;
-        .carousel-inner {
-            //            height: 410px;
+        .carousel-item {
+            background-image: url(../img/white.jpg);
             .news-picture-wrapper {
                 margin: 0 auto;
                 border: 1px solid black;
@@ -94,7 +109,7 @@ header {
                 }
             }
             p {
-                font-size: 19px;
+                font-size: 17px;
             }
         }
         .carousel-indicators {
@@ -114,8 +129,44 @@ header {
             margin: 10px 15px;
         }
         .active {
-            background-color: #fff;
+            background-color: #C1A691;
         }
+    }
+}
 
+#offer {
+    height: 810px;
+    background-image: url(../img/offer-background.jpg);
+    background-position: center right;
+    background-size: cover;
+    padding: 0;
+    .offer-header {
+        color: white;
+        padding-top: 50px;
+        margin: 0 auto;
+        p {
+            font-family: sans-serif;
+            font-size: 0.45em;
+            font-weight: 700;
+        }
+    }
+    figure {
+        display: inline-block;
+        width: 111px;
+        text-align: center;
+        img {
+            cursor: pointer;
+            height: 111px;
+            
+        }
+        figcaption {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
     }
 }
