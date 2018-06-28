@@ -1,5 +1,7 @@
+//--------GLOBAL--------
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .saw-tooth-bottom {
@@ -54,7 +56,7 @@ h2 {
         }
     }
 }
-
+//-------LOCAL-------
 header {
     .bg-light {
         background-color: #fff!important;
@@ -93,7 +95,7 @@ header {
 }
 
 #news {
-    .news-list {
+    #news-list {
         width: 80%;
         margin: 0 auto;
         .carousel-item {
@@ -135,7 +137,6 @@ header {
 }
 
 #offer {
-    height: 810px;
     background-image: url(../img/offer-background.jpg);
     background-position: center right;
     background-size: cover;
@@ -157,10 +158,12 @@ header {
         img {
             cursor: pointer;
             height: 111px;
-            
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         figcaption {
-            font-family: 'Roboto', sans-serif;
             color: white;
             text-align: center;
             font-size: 1.2rem;
@@ -168,5 +171,80 @@ header {
             font-weight: 500;
             letter-spacing: 1px;
         }
+    }
+    .offer-footer {
+        color: white;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+}
+
+#gallery {
+    .gallery-header {
+        font-size: 3em;
+        p {
+            font-size: 0.75em;
+        }
+    }
+    .offer-wrapper {
+        padding: 30px;
+    }
+    .top-counter {
+        position: absolute;
+        width: 100%;
+        margin: 50px auto;
+        .carousel-indicators {
+            position: static;
+            margin: 50px auto;
+            li {
+                width: 100%;
+                padding: 3px 10px;
+                text-indent: 0px;
+                text-align: center;
+                height: 34px;
+                font-weight: 700;
+                font-size: 20px;
+                margin: 0 10px;
+            }
+            .active {
+                background-color: #AD8B66;
+                color: white;
+            }
+        }
+    }
+    .carousel-item {
+        margin-top: 140px;
+    }
+    .bottom-counter {
+        .carousel-indicators {
+            position: static;
+            margin: 10px auto;
+            li {
+                position: static;
+                text-indent: 0px;
+                text-align: center;
+                line-height: 21px;
+                width: 21px;
+                height: 21px;
+                border-radius: 50%;
+                background-color: #CFCFCF;
+                color: white;
+                font-size: 10px;
+                margin: 10px 15px;
+            }
+        }
+    }
+}
+#locals{
+    height: 900px;
+    background-image: url(../img/locals-backgroung.jpg);
+    background-position: center right;
+    background-size: cover;
+    .saw-tooth-top{
+        top: 0%;
+    }
+    h2{
+        color: white;
     }
 }

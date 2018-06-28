@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 .saw-tooth-bottom {
   position: relative;
@@ -74,24 +75,24 @@ header #header-picture {
   height: 700px;
   width: 100%; }
 
-#news .news-list {
+#news #news-list {
   width: 80%;
   margin: 0 auto; }
-  #news .news-list .carousel-item {
+  #news #news-list .carousel-item {
     background-image: url(../img/white.jpg); }
-    #news .news-list .carousel-item .news-picture-wrapper {
+    #news #news-list .carousel-item .news-picture-wrapper {
       margin: 0 auto;
       border: 1px solid black;
       padding: 0.7vw;
       width: 80%; }
-      #news .news-list .carousel-item .news-picture-wrapper img {
+      #news #news-list .carousel-item .news-picture-wrapper img {
         height: 100%;
         width: 100%; }
-    #news .news-list .carousel-item p {
+    #news #news-list .carousel-item p {
       font-size: 17px; }
-  #news .news-list .carousel-indicators {
+  #news #news-list .carousel-indicators {
     position: relative; }
-  #news .news-list .list-number {
+  #news #news-list .list-number {
     position: static;
     text-indent: 0px;
     text-align: center;
@@ -103,11 +104,10 @@ header #header-picture {
     color: white;
     font-size: 9px;
     margin: 10px 15px; }
-  #news .news-list .active {
+  #news #news-list .active {
     background-color: #C1A691; }
 
 #offer {
-  height: 810px;
   background-image: url(../img/offer-background.jpg);
   background-position: center right;
   background-size: cover;
@@ -126,12 +126,76 @@ header #header-picture {
     text-align: center; }
     #offer figure img {
       cursor: pointer;
-      height: 111px; }
+      height: 111px;
+      transition: all 0.2s ease-in-out; }
+      #offer figure img:hover {
+        transform: scale(1.1); }
     #offer figure figcaption {
-      font-family: 'Roboto', sans-serif;
       color: white;
       text-align: center;
       font-size: 1.2rem;
       margin-top: 30px;
       font-weight: 500;
       letter-spacing: 1px; }
+  #offer .offer-footer {
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px; }
+
+#gallery .gallery-header {
+  font-size: 3em; }
+  #gallery .gallery-header p {
+    font-size: 0.75em; }
+
+#gallery .offer-wrapper {
+  padding: 30px; }
+
+#gallery .top-counter {
+  position: absolute;
+  width: 100%;
+  margin: 50px auto; }
+  #gallery .top-counter .carousel-indicators {
+    position: static;
+    margin: 50px auto; }
+    #gallery .top-counter .carousel-indicators li {
+      width: 100%;
+      padding: 3px 10px;
+      text-indent: 0px;
+      text-align: center;
+      height: 34px;
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0 10px; }
+    #gallery .top-counter .carousel-indicators .active {
+      background-color: #AD8B66;
+      color: white; }
+
+#gallery .carousel-item {
+  margin-top: 140px; }
+
+#gallery .bottom-counter .carousel-indicators {
+  position: static;
+  margin: 10px auto; }
+  #gallery .bottom-counter .carousel-indicators li {
+    position: static;
+    text-indent: 0px;
+    text-align: center;
+    line-height: 21px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #CFCFCF;
+    color: white;
+    font-size: 10px;
+    margin: 10px 15px; }
+
+#locals {
+  height: 900px;
+  background-image: url(../img/locals-backgroung.jpg);
+  background-position: center right;
+  background-size: cover; }
+  #locals .saw-tooth-top {
+    top: 0%; }
+  #locals h2 {
+    color: white; }
