@@ -56,32 +56,46 @@ h2 {
         }
     }
 }
+
+.row {
+    margin: 0;
+}
+
 //-------LOCAL-------
 header {
-    .bg-light {
-        background-color: #fff!important;
-    }
-    .navbar-nav {
-        margin: 0 auto;
-        height: 120px;
-        .nav-item {
-            .nav-link {
-                font-size: 12px;
-                font-weight: 700;
-                padding: 15px;
-                margin: 0 11px;
-                letter-spacing: 0.5px;
-                color: black;
-                transition: all 0.3s linear;
-                &:hover {
-                    color: #D8C29D;
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 16;
+        .bg-light {
+            background-color: #fff!important;
+        }
+        #logo-menu-small {
+            height: 80px;
+            margin: 0 auto;
+        }
+        .navbar-nav {
+            margin: 0 auto;
+            height: 120px;
+            .nav-item {
+                .nav-link {
+                    font-size: 12px;
+                    font-weight: 700;
+                    padding: 15px;
+                    letter-spacing: 0.5px;
+                    color: black;
                     transition: all 0.3s linear;
+                    &:hover {
+                        color: #D8C29D;
+                        transition: all 0.3s linear;
+                    }
                 }
             }
-        }
-        img {
-            height: 100%;
-            margin: 0 26px;
+            #logo-menu-big {
+                height: 120px;
+                margin: 0 26px;
+            }
         }
     }
     #header-picture {
@@ -236,15 +250,102 @@ header {
         }
     }
 }
-#locals{
-    height: 900px;
+
+#locals {
+    //    min-height: 900px;
     background-image: url(../img/locals-backgroung.jpg);
     background-position: center right;
     background-size: cover;
-    .saw-tooth-top{
+    .saw-tooth-top {
         top: 0%;
     }
-    h2{
+    h2 {
         color: white;
     }
+    .map-container {
+        border: 1px solid white;
+        width: 100%;
+        height: 460px;
+        padding: 10px;
+        margin-top: 60px;
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    #address-list-container {
+        height: 460px;
+        overflow: hidden;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        #address-list {
+            height: 300%;
+            .single-address {
+                color: white;
+                border-top: 1px solid white;
+                padding: 5px 0 5px 0;
+                .icons {
+                    width: 10%;
+                    margin-right: 30px;
+                    display: inline-block;
+                    img {
+                        display: block;
+                        height: 21px;
+                        margin: 10px 5px 20px 5px;
+                    }
+                }
+                .text {
+                    display: inline-block;
+                    width: 76%;
+                    font-size: 14px;
+                    p {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            .single-address:first-child {
+                border-top: 1px solid transparent;
+            }
+            .single-address:last-child {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+    .arrow {
+        color: white;
+        display: block;
+        font-size: 30px;
+        margin: 15px 0;
+        .fas {
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+#contact {
+    background-image: url(../img/footer-background.jpg);
+    background-position: center right;
+    background-size: cover;
+    min-height: 400px;
+    .contact-data {
+        h2 {
+            font-size: 2.5em;
+            padding: 100px 0 50px 0;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: #ECA39D;
 }
